@@ -34,6 +34,6 @@
 - [Gmail](mailto:fageern@gmail.com)
 
 
-## Flow Chart:
+## Work Flow:
 
 <img src="./assest/flowchart.jpg">
