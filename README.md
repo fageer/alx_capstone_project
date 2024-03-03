@@ -1,4 +1,4 @@
-# Products Management System
+# Alx Capstone Project
 
 
 ## Project Overview:
