@@ -34,6 +34,6 @@
 - [Gmail](mailto:fageern@gmail.com)
 
 
-## Work Flow:
+## Project WorkFlow:
 
 <img src="./assest/flowchart.jpg">
