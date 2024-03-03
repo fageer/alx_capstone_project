@@ -29,7 +29,7 @@
 
 ## Contact:
 
-** Fager Mohsen Fager Saeed:
+**Fager Mohsen Fager Saeed:**
 - [Linkedin](https://www.linkedin.com/in/fager-saeed-25a923296/)
 - [Gmail](mailto:fageern@gmail.com)
 
