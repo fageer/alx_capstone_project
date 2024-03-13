@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+:root {
+  --shadow-color: hsl(0, 0%, 74%);
+  --button-bg-color: hsl(136, 92%, 46%);
+  --button-hover-bg-color: hsla(144, 61%, 47%, 0.662);
+  --delete-btn-bg-color: hsl(0, 100%, 50%);
+  --delete-btn-hover-bg-color: hsla(1, 100%, 50%, 0.644);
+  --input-bg-color: hsl(0, 1%, 15%);
+  --white-color: hsl(0, 0%, 100%);
+  --black-color: hsl(0, 0%, 0%);
+  --xs-size: 5px;
+  --sm-size: 10px;
+  --md-size: 15px;
+  --lg-size: 20px;
+  --xl-size: 25px;
+  --xxl-size: 50px;
+  --xxxl-size: 100px;
+}
+.container {
+  position: relative;
+  margin: var(--lg-size) var(--xxxl-size);
+  padding: var(--lg-size) var(--xxl-size);
+  border-radius: var(--sm-size);
+  box-shadow: 0 0 var(--xs-size) var(--shadow-color);
+}
+button {
+  flex-grow: 1;
+  padding: var(--sm-size);
+  border-radius: var(--sm-size);
+  border: none;
+  outline: none;
+  font-size: var(--md-size);
+  font-weight: 900;
+  letter-spacing: 2px;
+  background-color: var(--button-bg-color);
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+button:hover {
+  background-color: var(--button-hover-bg-color);
+}
+input {
+  flex-grow: 1;
+  padding: var(--sm-size);
+  border-radius: var(--xs-size);
+  border: none;
+  outline: none;
+  font-size: var(--md-size);
+  font-weight: 500;
+  background-color: var(--input-bg-color);
+  color: var(--white-color);
+  transition: all 0.2s ease;
+}
+input:focus {
+  border: 1px solid var(--button-bg-color);
+}
+
+/* header */
+.top-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--sm-size);
+  margin-bottom: var(--lg-size);
+}
+#dark {
+  position: absolute;
+  top: var(--lg-size);
+  right: var(--xxl-size);
+  cursor: pointer;
+  font-size: var(--xl-size);
+}
+.dark {
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+.top-header h1 {
+  font-size: var(--lg-size);
+  font-weight: 500;
+  text-decoration: underline var(--button-bg-color);
+  margin-top: 20px;
+}
+#form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sm-size);
+}
+#total {
+  font-weight: 500;
+  padding: var(--xs-size);
+  border-radius: var(--sm-size);
+  background-color: var(--button-bg-color);
+  color: var(--white-color);
+}
+#form .price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--sm-size);
+}
+.searchBlock {
+  margin-top: var(--sm-size);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sm-size);
+}
+.Searchbtn {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--sm-size);
+}
+#deleteall {
+  margin-top: var(--sm-size);
+  display: flex;
+}
+.del {
+  background-color: var(--delete-btn-bg-color);
+  color: var(--white-color);
+}
+.delete {
+  background-color: var(--delete-btn-bg-color);
+  color: var(--white-color);
+  display: none;
+}
+.delete:hover,
+.del:hover {
+  background-color: var(--delete-btn-hover-bg-color);
+}
+#spanError {
+  color: var(--delete-btn-bg-color);
+  font-size: var(--md-size);
+  font-weight: 500;
+  text-decoration: underline var(--delete-btn-bg-color);
+  text-align: center;
+  text-transform: capitalize;
+  display: none;
+}
+/* end header */
+
+/* main */
+hr {
+  margin-top: var(--xxl-size);
+  margin-bottom: var(--lg-size);
+}
+#products {
+  text-align: center;
+  margin-top: var(--sm-size);
+  text-transform: uppercase;
+  font-size: var(--xl-size);
+  text-decoration: underline var(--button-bg-color);
+}
+.table {
+  overflow-x: auto;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  /* table-layout: fixed; */
+  text-align: center;
+  white-space: nowrap;
+}
+table th {
+  text-transform: uppercase;
+  background-color: var(--input-bg-color);
+  color: var(--white-color);
+  border: 1px solid var(--white-color);
+}
+th,
+td {
+  padding: var(--sm-size);
+  border: 1px solid var(--input-bg-color);
+}
+/* end main */
+
+/* footer */
+.footer {
+  text-align: center;
+  font-size: 12px;
+}
+.footer a {
+  color: var(--button-bg-color);
+}
+/* end footer */
+
+/* media query */
+@media screen and (max-width: 799px) {
+  .container {
+    margin: var(--sm-size);
+    padding: var(--sm-size);
+    /* overflow: hidden; */
+  }
+  button {
+    font-size: 12px;
+  }
+  input {
+    font-size: 12px;
+  }
+  #dark {
+    top: var(--sm-size);
+    right: var(--lg-size);
+  }
+  .top-header h1 {
+    font-size: var(--m-size);
+    margin-top: 30px;
+  }
+  #products {
+    font-size: var(--md-size);
+  }
+  #form .price {
+    align-items: start;
+    flex-direction: column;
+  }
+  #form .price input {
+    width: 95%;
+  }
+  th,
+  td {
+    font-size: 12px;
+  }
+}
+/* end media query */
